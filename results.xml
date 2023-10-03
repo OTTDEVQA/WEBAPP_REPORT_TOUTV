@@ -1,0 +1,1113 @@
+<testsuites id="" name="" tests="110" failures="16" skipped="0" errors="0" time="279.674441">
+<testsuite name="common/cards/showCard/favourite/bookmarkList.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="21.138" errors="0">
+<testcase name="C72367 C72369 Bookmarked show is saved in Favorite" classname="common/cards/showCard/favourite/bookmarkList.spec.ts" time="21.138">
+<properties>
+<property name="slow" value="">
+</property>
+</properties>
+<system-out>
+<![CDATA[Using account  garif43323@kkoup.com
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="common/cards/showCard/favourite/hover.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="1" skipped="0" time="21.334" errors="0">
+<testcase name="C72365 Hover/Selected State (Color change)" classname="common/cards/showCard/favourite/hover.spec.ts" time="21.334">
+<failure message="hover.spec.ts:5:5 C72365 Hover/Selected State (Color change)" type="FAILURE">
+<![CDATA[  [chrome-large-1] › common/cards/showCard/favourite/hover.spec.ts:5:5 › C72365 Hover/Selected State (Color change) 
+
+    Error: Timed out 15000ms waiting for expect(received).toHaveCSS(expected)
+
+    Expected string: "rgb(255, 255, 255)"
+    Received string: ""
+    Call log:
+      - expect.toHaveCSS with timeout 15000ms
+      - waiting for locator('[data-cy="heart btn"]')
+
+
+      20 |   await expect(page.locator(`[data-cy="${lineup}"]`)).toBeVisible();
+      21 |   await page.locator(`[data-cy="${lineup}"] li`).nth(2).hover();
+    > 22 |   await expect(page.locator('[data-cy="heart btn"]')).toHaveCSS('color', 'rgb(255, 255, 255)');
+         |                                                       ^
+      23 |   await page.locator('[data-cy="heart btn"]').hover();
+      24 |   await expect(page.locator('[data-cy="heart btn"]')).toHaveScreenshot('highlightedHeart.png', { threshold: 0.3 });
+      25 |   await expect(page.locator('[data-cy="heart btn"]')).toHaveCSS('color', 'rgb(255, 255, 255)');
+
+        at /source/tests/common/cards/showCard/favourite/hover.spec.ts:22:55
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/common-cards-showCard-favourite-hover-C72365-Hover-Selected-State-Color-change--chrome-large-1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/common-cards-showCard-favourite-hover-C72365-Hover-Selected-State-Color-change--chrome-large-1/trace.zip
+    Usage:
+
+        yarn playwright show-trace test-results/common-cards-showCard-favourite-hover-C72365-Hover-Selected-State-Color-change--chrome-large-1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/common-cards-showCard-favourite-hover-C72365-Hover-Selected-State-Color-change--chrome-large-1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/common-cards-showCard-favourite-hover-C72365-Hover-Selected-State-Color-change--chrome-large-1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="common/cards/showCard/live/livePage.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="2.753" errors="0">
+<testcase name="C81405 Live page" classname="common/cards/showCard/live/livePage.spec.ts" time="2.753">
+</testcase>
+</testsuite>
+<testsuite name="common/pageStructure/browseAll.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="2.277" errors="0">
+<testcase name="C81399 Browse all page" classname="common/pageStructure/browseAll.spec.ts" time="2.277">
+</testcase>
+</testsuite>
+<testsuite name="common/pageStructure/categoryPage.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="3.169" errors="0">
+<testcase name="C81401 Category page" classname="common/pageStructure/categoryPage.spec.ts" time="3.169">
+</testcase>
+</testsuite>
+<testsuite name="common/pageStructure/collectionPage.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="3.565" errors="0">
+<testcase name="C81402 Collection page" classname="common/pageStructure/collectionPage.spec.ts" time="3.565">
+</testcase>
+</testsuite>
+<testsuite name="common/pageStructure/homePage.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="36.772" errors="0">
+<testcase name="C81398 Home page" classname="common/pageStructure/homePage.spec.ts" time="36.772">
+<properties>
+<property name="slow" value="">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="common/pageStructure/homePage2.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="34.525" errors="0">
+<testcase name="C81398 Home page" classname="common/pageStructure/homePage2.spec.ts" time="34.525">
+<properties>
+<property name="slow" value="">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="common/pageStructure/showPage.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="3.908" errors="0">
+<testcase name="C81403 Show page" classname="common/pageStructure/showPage.spec.ts" time="3.908">
+</testcase>
+</testsuite>
+<testsuite name="common/showPage/cta/playCTAMultiContent.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="1" skipped="0" time="19.168" errors="0">
+<testcase name="C72224 CTA Multi content" classname="common/showPage/cta/playCTAMultiContent.spec.ts" time="19.168">
+<failure message="playCTAMultiContent.spec.ts:19:5 C72224 CTA Multi content" type="FAILURE">
+<![CDATA[  [chrome-large-1] › common/showPage/cta/playCTAMultiContent.spec.ts:19:5 › C72224 CTA Multi content 
+
+    Error: Timed out 15000ms waiting for expect(received).toBeVisible()
+    Call log:
+      - expect.toBeVisible with timeout 15000ms
+      - waiting for getByText('S1 | 1. Massillon, Ohio : au royaume des Tigers', { exact: true })
+
+
+      19 | test('C72224 CTA Multi content', async ({ page }) => {
+      20 |   await page.goto(`/${showUrl}`);
+    > 21 |   await expect(page.getByText(playBtn, { exact: true })).toBeVisible();
+         |                                                          ^
+      22 |   await expect(page.getByText(duration).first()).toBeVisible();
+      23 | });
+      24 |
+
+        at /source/tests/common/showPage/cta/playCTAMultiContent.spec.ts:21:58
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/common-showPage-cta-playCTAMultiContent-C72224-CTA-Multi-content-chrome-large-1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/common-showPage-cta-playCTAMultiContent-C72224-CTA-Multi-content-chrome-large-1/trace.zip
+    Usage:
+
+        yarn playwright show-trace test-results/common-showPage-cta-playCTAMultiContent-C72224-CTA-Multi-content-chrome-large-1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/common-showPage-cta-playCTAMultiContent-C72224-CTA-Multi-content-chrome-large-1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/common-showPage-cta-playCTAMultiContent-C72224-CTA-Multi-content-chrome-large-1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="common/showPage/cta/playCTASingleContent.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="3.122" errors="0">
+<testcase name="C72685 CTA single content" classname="common/showPage/cta/playCTASingleContent.spec.ts" time="3.122">
+</testcase>
+</testsuite>
+<testsuite name="common/showPage/cta/tryPremiumCTA.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="3" failures="1" skipped="0" time="41.165" errors="0">
+<testcase name="C72228 Try premium / Essayer EXTRA CTA for free user" classname="common/showPage/cta/tryPremiumCTA.spec.ts" time="4.106">
+</testcase>
+<testcase name="C72228 Try premium CTA is not applicable for premium users" classname="common/showPage/cta/tryPremiumCTA.spec.ts" time="31.445">
+<failure message="tryPremiumCTA.spec.ts:39:12 C72228 Try premium CTA is not applicable for premium users" type="FAILURE">
+<![CDATA[  [chrome-large-1] › common/showPage/cta/tryPremiumCTA.spec.ts:39:12 › C72228 Try premium CTA is not applicable for premium users 
+
+    Error: Timed out 15000ms waiting for expect(received).not.toBeVisible()
+    Call log:
+      - expect.not.toBeVisible with timeout 15000ms
+      - waiting for getByRole('button', { name: 'Essayer l\'EXTRA' })
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+      -   locator resolved to <button class="sc-762f1383-0 eiWtvu sc-7db61f27-0 sc-7db…>…</button>
+      -   unexpected value "visible"
+
+
+      38 | });
+      39 | testPremium('C72228 Try premium CTA is not applicable for premium users', async ({ page }) => {
+    > 40 |   await expect(page.getByRole('button', { name: tryPremiumBtn })).not.toBeVisible();
+         |                                                                       ^
+      41 | });
+      42 | test('C72228 trailer CTA is displayed along with the Try premium / Essayer EXTRA CTA', async ({ page }) => {
+      43 |   await page.route(`**/catalog/v2/${platform}/show/${showUrl}*`, async (route) => {
+
+        at /source/tests/common/showPage/cta/tryPremiumCTA.spec.ts:40:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/common-showPage-cta-tryPremiumCTA-C72228-Try-premium-CTA-is-not-applicable-for-premium-users-chrome-large-1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/common-showPage-cta-tryPremiumCTA-C72228-Try-premium-CTA-is-not-applicable-for-premium-users-chrome-large-1/trace.zip
+    Usage:
+
+        yarn playwright show-trace test-results/common-showPage-cta-tryPremiumCTA-C72228-Try-premium-CTA-is-not-applicable-for-premium-users-chrome-large-1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Using account  fibipa6098@kkoup.com
+
+[[ATTACHMENT|../test-results/common-showPage-cta-tryPremiumCTA-C72228-Try-premium-CTA-is-not-applicable-for-premium-users-chrome-large-1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/common-showPage-cta-tryPremiumCTA-C72228-Try-premium-CTA-is-not-applicable-for-premium-users-chrome-large-1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="C72228 trailer CTA is displayed along with the Try premium / Essayer EXTRA CTA" classname="common/showPage/cta/tryPremiumCTA.spec.ts" time="5.614">
+</testcase>
+</testsuite>
+<testsuite name="common/showPage/episode/episodeDescription.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="1" skipped="0" time="19.043" errors="0">
+<testcase name="C72242 Episode Description" classname="common/showPage/episode/episodeDescription.spec.ts" time="19.043">
+<failure message="episodeDescription.spec.ts:35:5 C72242 Episode Description" type="FAILURE">
+<![CDATA[  [chrome-large-1] › common/showPage/episode/episodeDescription.spec.ts:35:5 › C72242 Episode Description 
+
+    Error: Timed out 15000ms waiting for expect(received).toBeVisible()
+    Call log:
+      - expect.toBeVisible with timeout 15000ms
+      - waiting for getByText('Vivacité, sens de l\'observation, grand bagage de connaissances et esprit d\'équipe sont les qualités qui définissent les jeunes de 14 à 17 ans, prêts à relever le défi 100 génies. Dans ce premier').nth(1)
+
+
+      35 | test('C72242 Episode Description', async ({ page }) => {
+      36 |   await page.goto(`/${showUrl}`);
+    > 37 |   await expect(page.getByText(description).nth(1)).toBeVisible();
+         |                                                    ^
+      38 |   await expect(page.getByText(duration).first()).toBeVisible();
+      39 |   await expect(page.getByLabel(title).first()).toBeVisible();
+      40 |   await expect(page.getByText(releaseDate).first()).toBeVisible();
+
+        at /source/tests/common/showPage/episode/episodeDescription.spec.ts:37:52
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/common-showPage-episode-episodeDescription-C72242-Episode-Description-chrome-large-1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/common-showPage-episode-episodeDescription-C72242-Episode-Description-chrome-large-1/trace.zip
+    Usage:
+
+        yarn playwright show-trace test-results/common-showPage-episode-episodeDescription-C72242-Episode-Description-chrome-large-1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/common-showPage-episode-episodeDescription-C72242-Episode-Description-chrome-large-1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/common-showPage-episode-episodeDescription-C72242-Episode-Description-chrome-large-1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="common/showPage/episode/episodeList.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="3.25" errors="0">
+<testcase name="C1078428 Episodes list Count toutv" classname="common/showPage/episode/episodeList.spec.ts" time="3.25">
+</testcase>
+</testsuite>
+<testsuite name="common/showPage/episode/showmore.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="1" skipped="0" time="20.716" errors="0">
+<testcase name="C72244 Show More" classname="common/showPage/episode/showmore.spec.ts" time="20.716">
+<failure message="showmore.spec.ts:25:5 C72244 Show More" type="FAILURE">
+<![CDATA[  [chrome-large-1] › common/showPage/episode/showmore.spec.ts:25:5 › C72244 Show More ──────────────
+
+    Error: Timed out 15000ms waiting for expect(received).toBeVisible()
+    Call log:
+      - expect.toBeVisible with timeout 15000ms
+      - waiting for getByLabel('1. Massillon, Ohio : au royaume des Tigers').getByText('Durée')
+
+
+      28 |   await page.locator('[data-cy="share card"]').nth(0).click();
+      29 |   await page.locator('[data-cy="share card"]').nth(0).click();
+    > 30 |   await expect(page.getByLabel(episodeLabel).getByText(metadataDuration)).toBeVisible();
+         |                                                                           ^
+      31 |   await expect(page.getByLabel(episodeLabel).getByText(metadataAirdate)).toBeVisible();
+      32 |   await expect(page.getByLabel(episodeLabel).getByText(metadataAvailabilityDate)).toBeVisible();
+      33 |   await expect(page.getByLabel(episodeLabel).getByText(metadataCountry)).toBeVisible();
+
+        at /source/tests/common/showPage/episode/showmore.spec.ts:30:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/common-showPage-episode-showmore-C72244-Show-More-chrome-large-1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/common-showPage-episode-showmore-C72244-Show-More-chrome-large-1/trace.zip
+    Usage:
+
+        yarn playwright show-trace test-results/common-showPage-episode-showmore-C72244-Show-More-chrome-large-1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/common-showPage-episode-showmore-C72244-Show-More-chrome-large-1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/common-showPage-episode-showmore-C72244-Show-More-chrome-large-1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="common/showPage/logo/showPage.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="3.1" errors="0">
+<testcase name="C81403 Show page" classname="common/showPage/logo/showPage.spec.ts" time="3.1">
+</testcase>
+</testsuite>
+<testsuite name="common/showPage/logo/withLogo.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="3.109" errors="0">
+<testcase name="C81180 Header title with logo" classname="common/showPage/logo/withLogo.spec.ts" time="3.109">
+</testcase>
+</testsuite>
+<testsuite name="common/showPage/logo/withoutLogo.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="2.829" errors="0">
+<testcase name="C81181 Show page without logo" classname="common/showPage/logo/withoutLogo.spec.ts" time="2.829">
+</testcase>
+</testsuite>
+<testsuite name="common/showPage/recommendations/recommendations.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="3.884" errors="0">
+<testcase name="C72253 Recommendation Swimlane" classname="common/showPage/recommendations/recommendations.spec.ts" time="3.884">
+</testcase>
+</testsuite>
+<testsuite name="common/showPage/seasonPickers/seasonPicker.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="4.691" errors="0">
+<testcase name="Show page with multiple season  › C72247 Season pickers fonctionalities" classname="common/showPage/seasonPickers/seasonPicker.spec.ts" time="4.691">
+</testcase>
+</testsuite>
+<testsuite name="common/showPage/seasonPickers/seasonPicker2.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="3.038" errors="0">
+<testcase name="Show page with multiple season  › C1242348 Season pickers default last season for toutv and first season for gem" classname="common/showPage/seasonPickers/seasonPicker2.spec.ts" time="3.038">
+</testcase>
+</testsuite>
+<testsuite name="common/showPage/seasonPickers/seasonPickerMember.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="2" failures="0" skipped="0" time="5.854" errors="0">
+<testcase name="Show page, free content without any locks  › C130579 Free content, user  Guest / Member not signed in" classname="common/showPage/seasonPickers/seasonPickerMember.spec.ts" time="2.902">
+</testcase>
+<testcase name="Show page,premium content with a closed locks  › C130579 Premium content, user  Guest / Member not signed in" classname="common/showPage/seasonPickers/seasonPickerMember.spec.ts" time="2.952">
+</testcase>
+</testsuite>
+<testsuite name="common/showPage/seasonPickers/seasonPickerPremium.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="2" failures="1" skipped="0" time="20.237" errors="0">
+<testcase name="Show page, free content without any locks  › C130834 Free content, Premium/Member user" classname="common/showPage/seasonPickers/seasonPickerPremium.spec.ts" time="14.215">
+<system-out>
+<![CDATA[Using account  yacicic826@inkiny.com
+]]>
+</system-out>
+</testcase>
+<testcase name="Show page,premium content without any locks  › C130834 Premium content, Premium/Member user" classname="common/showPage/seasonPickers/seasonPickerPremium.spec.ts" time="6.022">
+<failure message="seasonPickerPremium.spec.ts:33:7 C130834 Premium content, Premium/Member user" type="FAILURE">
+<![CDATA[  [chrome-large-1] › common/showPage/seasonPickers/seasonPickerPremium.spec.ts:33:7 › Show page,premium content without any locks  › C130834 Premium content, Premium/Member user 
+
+    Error: Screenshot comparison failed:
+
+      Expected an image 843px by 183px, received 843px by 190px. 21079 pixels (ratio 0.14 of all image pixels) are different.
+
+    Call log:
+      - expect.toHaveScreenshot(premium-card-toutv-premiumUser.png) with timeout 15000ms
+      -   verifying given screenshot expectation
+      - waiting for locator('[data-cy-card-type="Episode"]').nth(2)
+      -   locator resolved to <article data-cy-card-type="Episode" class="sc-e267bf25-0…>…</article>
+      - taking element screenshot
+      -   disabled all CSS animations
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      - Expected an image 843px by 183px, received 843px by 190px. 21079 pixels (ratio 0.14 of all image pixels) are different.
+      - waiting 100ms before taking screenshot
+      - waiting for locator('[data-cy-card-type="Episode"]').nth(2)
+      -   locator resolved to <article data-cy-card-type="Episode" class="sc-e267bf25-0…>…</article>
+      - taking element screenshot
+      -   disabled all CSS animations
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      - captured a stable screenshot
+      - Expected an image 843px by 183px, received 843px by 190px. 21079 pixels (ratio 0.14 of all image pixels) are different.
+
+    Expected: /source/tests/common/showPage/seasonPickers/seasonPickerPremium.spec.ts-snapshots/premium-card-toutv-premiumUser-chrome-large-1-linux.png
+    Received: /source/test-results/common-showPage-seasonPickers-seasonPickerPrem-55718-cks-C130834-Premium-content-Premium-Member-user-chrome-large-1/premium-card-toutv-premiumUser-actual.png
+        Diff: /source/test-results/common-showPage-seasonPickers-seasonPickerPrem-55718-cks-C130834-Premium-content-Premium-Member-user-chrome-large-1/premium-card-toutv-premiumUser-diff.png
+
+      35 |     await expect(page.getByLabel(saison)).toHaveScreenshot(`premium-season-${platform}-premiumUser.png`);
+      36 |     const card = await page.locator('[data-cy-card-type="Episode"]').nth(2);
+    > 37 |     await expect(card).toHaveScreenshot(`premium-card-${platform}-premiumUser.png`);
+         |                        ^
+      38 |   });
+      39 | });
+      40 |
+
+        at /source/tests/common/showPage/seasonPickers/seasonPickerPremium.spec.ts:37:24
+
+    attachment #1: premium-card-toutv-premiumUser-expected.png (image/png) ─────────────────────────
+    tests/common/showPage/seasonPickers/seasonPickerPremium.spec.ts-snapshots/premium-card-toutv-premiumUser-chrome-large-1-linux.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: premium-card-toutv-premiumUser-actual.png (image/png) ───────────────────────────
+    test-results/common-showPage-seasonPickers-seasonPickerPrem-55718-cks-C130834-Premium-content-Premium-Member-user-chrome-large-1/premium-card-toutv-premiumUser-actual.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: premium-card-toutv-premiumUser-diff.png (image/png) ─────────────────────────────
+    test-results/common-showPage-seasonPickers-seasonPickerPrem-55718-cks-C130834-Premium-content-Premium-Member-user-chrome-large-1/premium-card-toutv-premiumUser-diff.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/common-showPage-seasonPickers-seasonPickerPrem-55718-cks-C130834-Premium-content-Premium-Member-user-chrome-large-1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/common-showPage-seasonPickers-seasonPickerPrem-55718-cks-C130834-Premium-content-Premium-Member-user-chrome-large-1/trace.zip
+    Usage:
+
+        yarn playwright show-trace test-results/common-showPage-seasonPickers-seasonPickerPrem-55718-cks-C130834-Premium-content-Premium-Member-user-chrome-large-1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|common/showPage/seasonPickers/seasonPickerPremium.spec.ts-snapshots/premium-card-toutv-premiumUser-chrome-large-1-linux.png]]
+
+[[ATTACHMENT|../test-results/common-showPage-seasonPickers-seasonPickerPrem-55718-cks-C130834-Premium-content-Premium-Member-user-chrome-large-1/premium-card-toutv-premiumUser-actual.png]]
+
+[[ATTACHMENT|../test-results/common-showPage-seasonPickers-seasonPickerPrem-55718-cks-C130834-Premium-content-Premium-Member-user-chrome-large-1/premium-card-toutv-premiumUser-diff.png]]
+
+[[ATTACHMENT|../test-results/common-showPage-seasonPickers-seasonPickerPrem-55718-cks-C130834-Premium-content-Premium-Member-user-chrome-large-1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/common-showPage-seasonPickers-seasonPickerPrem-55718-cks-C130834-Premium-content-Premium-Member-user-chrome-large-1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="common/swimlanes/navigationArrows/nextPreviousArrows.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="15.879" errors="0">
+<testcase name="C73103 C73104 Next-Previous navigation arrows location and Functionality" classname="common/swimlanes/navigationArrows/nextPreviousArrows.spec.ts" time="15.879">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/accountCreationLogin/web/login.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="3" failures="1" skipped="0" time="30.752" errors="0">
+<testcase name="C81546 B2C authentification" classname="Toutv/accountCreationLogin/web/login.spec.ts" time="14.884">
+<failure message="login.spec.ts:3:5 C81546 B2C authentification" type="FAILURE">
+<![CDATA[  [chrome-large-1] › Toutv/accountCreationLogin/web/login.spec.ts:3:5 › C81546 B2C authentification 
+
+    TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+    =========================== logs ===========================
+    waiting for getByRole('button', { name: 'Ouvrir le menu "Mon TOU.TV"' }) to be visible
+    ============================================================
+
+      13 |     name: 'Ouvrir le menu "Mon TOU.TV"'
+      14 |   });
+    > 15 |   await menu.waitFor({ state: 'visible' });
+         |              ^
+      16 | });
+      17 |
+      18 | test('invalid email', async ({ page, invalidEmail }) => {
+
+        at /source/tests/Toutv/accountCreationLogin/web/login.spec.ts:15:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Toutv-accountCreationLogin-web-login-C81546-B2C-authentification-chrome-large-1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Toutv-accountCreationLogin-web-login-C81546-B2C-authentification-chrome-large-1/trace.zip
+    Usage:
+
+        yarn playwright show-trace test-results/Toutv-accountCreationLogin-web-login-C81546-B2C-authentification-chrome-large-1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Toutv-accountCreationLogin-web-login-C81546-B2C-authentification-chrome-large-1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Toutv-accountCreationLogin-web-login-C81546-B2C-authentification-chrome-large-1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="invalid email" classname="Toutv/accountCreationLogin/web/login.spec.ts" time="7.137">
+</testcase>
+<testcase name="invalid password" classname="Toutv/accountCreationLogin/web/login.spec.ts" time="8.731">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/cards/showCard/favourite/heartLocation.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="4" failures="1" skipped="0" time="23.79" errors="0">
+<testcase name="C72366 heart location" classname="Toutv/cards/showCard/favourite/heartLocation.spec.ts" time="4.396">
+</testcase>
+<testcase name="C72366 heart location in Categories" classname="Toutv/cards/showCard/favourite/heartLocation.spec.ts" time="10.285">
+<failure message="heartLocation.spec.ts:30:5 C72366 heart location in Categories" type="FAILURE">
+<![CDATA[  [chrome-large-1] › Toutv/cards/showCard/favourite/heartLocation.spec.ts:30:5 › C72366 heart location in Categories 
+
+    TimeoutError: locator.hover: Timeout 5000ms exceeded.
+    =========================== logs ===========================
+    waiting for locator('#format-grid-0')
+    ============================================================
+
+      32 |   await page.getByRole('link', { name: `Parcourir la catégorie "${formatName}"` }).click();
+      33 |   await page.waitForURL('**/categorie/**');
+    > 34 |   await page.locator('#format-grid-0').hover();
+         |                                        ^
+      35 |   await expect(page.locator('[data-cy="heart btn"]')).toHaveCSS('color', 'rgb(255, 255, 255)');
+      36 | });
+      37 |
+
+        at /source/tests/Toutv/cards/showCard/favourite/heartLocation.spec.ts:34:40
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Toutv-cards-showCard-favourite-heartLocation-C72366-heart-location-in-Categories-chrome-large-1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Toutv-cards-showCard-favourite-heartLocation-C72366-heart-location-in-Categories-chrome-large-1/trace.zip
+    Usage:
+
+        yarn playwright show-trace test-results/Toutv-cards-showCard-favourite-heartLocation-C72366-heart-location-in-Categories-chrome-large-1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Toutv-cards-showCard-favourite-heartLocation-C72366-heart-location-in-Categories-chrome-large-1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Toutv-cards-showCard-favourite-heartLocation-C72366-heart-location-in-Categories-chrome-large-1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="C72366 heart location in Collection" classname="Toutv/cards/showCard/favourite/heartLocation.spec.ts" time="4.002">
+</testcase>
+<testcase name="C72366 heart location in Genre" classname="Toutv/cards/showCard/favourite/heartLocation.spec.ts" time="5.107">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/cards/showCard/favourite/heartNotAvailable.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="3" failures="0" skipped="0" time="19.975" errors="0">
+<testcase name="C81782 Heart Not available on promotion cards" classname="Toutv/cards/showCard/favourite/heartNotAvailable.spec.ts" time="5.435">
+</testcase>
+<testcase name="C81782 Heart Not available on rattrapage cards" classname="Toutv/cards/showCard/favourite/heartNotAvailable.spec.ts" time="3.518">
+</testcase>
+<testcase name="C81782 hearts are not available on cards in Mes visionnements" classname="Toutv/cards/showCard/favourite/heartNotAvailable.spec.ts" time="11.022">
+<system-out>
+<![CDATA[Using account  simade3153@mliok.com
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Toutv/cards/showCard/favourite/unbookmarkShow.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="13.409" errors="0">
+<testcase name="C1177838 Unbookmark a show then validate the show do not appears in Mes Favoris" classname="Toutv/cards/showCard/favourite/unbookmarkShow.spec.ts" time="13.409">
+<system-out>
+<![CDATA[Using account  posipay905@kkoup.com
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Toutv/cards/showCard/favourite/warning.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="5.361" errors="0">
+<testcase name="C79242 Warning message when not logged" classname="Toutv/cards/showCard/favourite/warning.spec.ts" time="5.361">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/cards/showCard/labels/showLabel.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="4" failures="0" skipped="0" time="13.333" errors="0">
+<testcase name="C72326 Home Page Program label color and case" classname="Toutv/cards/showCard/labels/showLabel.spec.ts" time="4.035">
+</testcase>
+<testcase name="C72326 Collection Page Program label color and case" classname="Toutv/cards/showCard/labels/showLabel.spec.ts" time="3.269">
+</testcase>
+<testcase name="C72326 Show Page Program label color and case" classname="Toutv/cards/showCard/labels/showLabel.spec.ts" time="2.92">
+</testcase>
+<testcase name="C72326 Category Page Program label color and case" classname="Toutv/cards/showCard/labels/showLabel.spec.ts" time="3.109">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/cards/showCard/live/livePage.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="2.99" errors="0">
+<testcase name="C81405 Live page" classname="Toutv/cards/showCard/live/livePage.spec.ts" time="2.99">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/cards/showCard/title/cardDescription.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="1" skipped="0" time="10.337" errors="0">
+<testcase name="C1212730 Show card desription" classname="Toutv/cards/showCard/title/cardDescription.spec.ts" time="10.337">
+<failure message="cardDescription.spec.ts:4:5 C1212730 Show card desription" type="FAILURE">
+<![CDATA[  [chrome-large-1] › Toutv/cards/showCard/title/cardDescription.spec.ts:4:5 › C1212730 Show card desription 
+
+    TimeoutError: locator.textContent: Timeout 5000ms exceeded.
+    =========================== logs ===========================
+    waiting for locator('[data-cy="card description"]')
+    ============================================================
+
+      13 |   await page.goto('/');
+      14 |   await page.locator('[data-cy="Populaires en ce moment"] li').nth(1).hover();
+    > 15 |   const actualDescription = await page.locator('[data-cy="card description"]').textContent();
+         |                                                                                ^
+      16 |   expect(actualDescription).toEqual(description);
+      17 | });
+      18 |
+
+        at /source/tests/Toutv/cards/showCard/title/cardDescription.spec.ts:15:80
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Toutv-cards-showCard-title-cardDescription-C1212730-Show-card-desription-chrome-large-1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Toutv-cards-showCard-title-cardDescription-C1212730-Show-card-desription-chrome-large-1/trace.zip
+    Usage:
+
+        yarn playwright show-trace test-results/Toutv-cards-showCard-title-cardDescription-C1212730-Show-card-desription-chrome-large-1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Toutv-cards-showCard-title-cardDescription-C1212730-Show-card-desription-chrome-large-1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Toutv-cards-showCard-title-cardDescription-C1212730-Show-card-desription-chrome-large-1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Toutv/cards/showCard/title/cardInfoTitle.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="1" skipped="0" time="10.19" errors="0">
+<testcase name="C1212731 Show card infoTitle" classname="Toutv/cards/showCard/title/cardInfoTitle.spec.ts" time="10.19">
+<failure message="cardInfoTitle.spec.ts:16:5 C1212731 Show card infoTitle" type="FAILURE">
+<![CDATA[  [chrome-large-1] › Toutv/cards/showCard/title/cardInfoTitle.spec.ts:16:5 › C1212731 Show card infoTitle 
+
+    TimeoutError: locator.textContent: Timeout 5000ms exceeded.
+    =========================== logs ===========================
+    waiting for locator('[data-cy="card infoTitle"]')
+    ============================================================
+
+      17 |   await page.goto('/');
+      18 |   await page.locator('[data-cy="Populaires en ce moment"] li').nth(1).hover();
+    > 19 |   const actualInfoTitle = await page.locator('[data-cy="card infoTitle"]').textContent();
+         |                                                                            ^
+      20 |   expect(actualInfoTitle).toEqual(infoTitle);
+      21 | });
+      22 |
+
+        at /source/tests/Toutv/cards/showCard/title/cardInfoTitle.spec.ts:19:76
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Toutv-cards-showCard-title-cardInfoTitle-C1212731-Show-card-infoTitle-chrome-large-1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Toutv-cards-showCard-title-cardInfoTitle-C1212731-Show-card-infoTitle-chrome-large-1/trace.zip
+    Usage:
+
+        yarn playwright show-trace test-results/Toutv-cards-showCard-title-cardInfoTitle-C1212731-Show-card-infoTitle-chrome-large-1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Toutv-cards-showCard-title-cardInfoTitle-C1212731-Show-card-infoTitle-chrome-large-1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Toutv-cards-showCard-title-cardInfoTitle-C1212731-Show-card-infoTitle-chrome-large-1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Toutv/cards/showCard/title/categoryCard.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="5.091" errors="0">
+<testcase name="C1128009 Validate the card title in the category page" classname="Toutv/cards/showCard/title/categoryCard.spec.ts" time="5.091">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/cards/showCard/title/collectionCard.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="5.355" errors="0">
+<testcase name="C1212740 Validate the card title in the collection page" classname="Toutv/cards/showCard/title/collectionCard.spec.ts" time="5.355">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/cards/showCard/title/premiumContent.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="3" failures="0" skipped="0" time="21.504" errors="0">
+<testcase name="C1212732 Show card tier" classname="Toutv/cards/showCard/title/premiumContent.spec.ts" time="3.687">
+</testcase>
+<testcase name="C1212732 Premium lock is displayed for member user" classname="Toutv/cards/showCard/title/premiumContent.spec.ts" time="12.873">
+<system-out>
+<![CDATA[Using account  gicifa2183@inkiny.com
+]]>
+</system-out>
+</testcase>
+<testcase name="C1212732 Premium lock is not displayed for premium user" classname="Toutv/cards/showCard/title/premiumContent.spec.ts" time="4.944">
+<system-out>
+<![CDATA[Resuse user : premium
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Toutv/cards/showCard/title/showTitle.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="3.534" errors="0">
+<testcase name="C72305 card title" classname="Toutv/cards/showCard/title/showTitle.spec.ts" time="3.534">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/monToutTv/monCompte/notConnected.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="5" failures="0" skipped="0" time="14.59" errors="0">
+<testcase name="C32092 Access my account while not connected mes_favoris" classname="Toutv/monToutTv/monCompte/notConnected.spec.ts" time="2.112">
+</testcase>
+<testcase name="C32092 Access my account while not connected mon_compte" classname="Toutv/monToutTv/monCompte/notConnected.spec.ts" time="2.219">
+</testcase>
+<testcase name="C32092 Access my account while not connected mes_visionnements" classname="Toutv/monToutTv/monCompte/notConnected.spec.ts" time="2.163">
+</testcase>
+<testcase name="C32092 Access connexion-utilisateur while not connected" classname="Toutv/monToutTv/monCompte/notConnected.spec.ts" time="3.785">
+</testcase>
+<testcase name="C32092 Access Me connecter while not connected" classname="Toutv/monToutTv/monCompte/notConnected.spec.ts" time="4.311">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/monToutTv/monCompte/notValidated.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="1" skipped="0" time="35.58" errors="0">
+<testcase name="C1562635 Account Standard not validated" classname="Toutv/monToutTv/monCompte/notValidated.spec.ts" time="35.58">
+<failure message="notValidated.spec.ts:8:5 C1562635 Account Standard not validated" type="FAILURE">
+<![CDATA[  [chrome-large-1] › Toutv/monToutTv/monCompte/notValidated.spec.ts:8:5 › C1562635 Account Standard not validated 
+
+    TimeoutError: locator.fill: Timeout 30000ms exceeded.
+    =========================== logs ===========================
+    waiting for locator('input#password')
+    ============================================================
+
+       at ../support/login/base.ts:70
+
+      68 |       await page.locator('input#email').fill(email);
+      69 |       await page.locator('#continue').click();
+    > 70 |       await page.locator('input#password').fill(password);
+         |                                            ^
+      71 |       await page.locator('#next').click();
+      72 |       await page.waitForLoadState();
+      73 |
+
+        at Object.scope (/source/support/login/base.ts:70:44)
+]]>
+</failure>
+<system-out>
+<![CDATA[Using account  
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Toutv/myAccount/subscriptions/telusCancelled/abonnement.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="1" skipped="0" time="13.657" errors="0">
+<testcase name="C1596433 TTV Cancelled Telus / Abonnement" classname="Toutv/myAccount/subscriptions/telusCancelled/abonnement.spec.ts" time="13.657">
+<failure message="abonnement.spec.ts:3:5 C1596433 TTV Cancelled Telus / Abonnement" type="FAILURE">
+<![CDATA[  [chrome-large-1] › Toutv/myAccount/subscriptions/telusCancelled/abonnement.spec.ts:3:5 › C1596433 TTV Cancelled Telus / Abonnement 
+
+    TimeoutError: page.waitForResponse: Timeout 5000ms exceeded while waiting for event "response"
+    =========================== logs ===========================
+    waiting for response "https://int2-services.radio-canada.ca/ott/subscrip…"
+    ============================================================
+
+      2 |
+      3 | test('C1596433 TTV Cancelled Telus / Abonnement', async ({ page, navigator }) => {
+    > 4 |   const responsePromise = page.waitForResponse(
+        |                                ^
+      5 |     'https://int2-services.radio-canada.ca/ott/subscription/v2/toutv/subscriber/profile?device=web'
+      6 |   );
+      7 |   await page.goto(navigator.MyAccount);
+
+        at /source/tests/Toutv/myAccount/subscriptions/telusCancelled/abonnement.spec.ts:4:32
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Toutv-myAccount-subscriptions-telusCancelled-abonnement-C1596433-TTV-Cancelled-Telus-Abonnement-chrome-large-1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Toutv-myAccount-subscriptions-telusCancelled-abonnement-C1596433-TTV-Cancelled-Telus-Abonnement-chrome-large-1/trace.zip
+    Usage:
+
+        yarn playwright show-trace test-results/Toutv-myAccount-subscriptions-telusCancelled-abonnement-C1596433-TTV-Cancelled-Telus-Abonnement-chrome-large-1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Using account  fsubott+cancelledtelus@gmail.com
+
+[[ATTACHMENT|../test-results/Toutv-myAccount-subscriptions-telusCancelled-abonnement-C1596433-TTV-Cancelled-Telus-Abonnement-chrome-large-1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Toutv-myAccount-subscriptions-telusCancelled-abonnement-C1596433-TTV-Cancelled-Telus-Abonnement-chrome-large-1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Toutv/myAccount/subscriptions/telusCancelled/facture.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="15.035" errors="0">
+<testcase name="C1647634 TTV Cancelled Telus account / Facture" classname="Toutv/myAccount/subscriptions/telusCancelled/facture.spec.ts" time="15.035">
+<system-out>
+<![CDATA[Using account  subscribefrank+teluscancelled@gmail.com
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Toutv/myAccount/subscriptions/telusCancelled/monProfil_Aide.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="1" skipped="0" time="8.478" errors="0">
+<testcase name="C1647637 TTV Cancelled Telus account / Mon profil Radio-Canada / Aide" classname="Toutv/myAccount/subscriptions/telusCancelled/monProfil_Aide.spec.ts" time="8.478">
+<failure message="monProfil_Aide.spec.ts:3:5 C1647637 TTV Cancelled Telus account / Mon profil Radio-Canada / Aide" type="FAILURE">
+<![CDATA[  [chrome-large-1] › Toutv/myAccount/subscriptions/telusCancelled/monProfil_Aide.spec.ts:3:5 › C1647637 TTV Cancelled Telus account / Mon profil Radio-Canada / Aide 
+
+    TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 5000ms exceeded.
+    =========================== logs ===========================
+    waiting for getByLabel('Aide, Vous avez besoin d\'assistance technique? (nouvelle fenêtre)')
+    ============================================================
+
+       5 |
+       6 |   const aideBox = page.getByLabel("Aide, Vous avez besoin d'assistance technique? (nouvelle fenêtre)");
+    >  7 |   await aideBox.scrollIntoViewIfNeeded();
+         |                 ^
+       8 |   await expect(aideBox).toBeVisible;
+       9 |
+      10 |   await aideBox.hover();
+
+        at /source/tests/Toutv/myAccount/subscriptions/telusCancelled/monProfil_Aide.spec.ts:7:17
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Toutv-myAccount-subscriptions-telusCancelled-m-79ea6-lled-Telus-account-Mon-profil-Radio-Canada-Aide-chrome-large-1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Toutv-myAccount-subscriptions-telusCancelled-m-79ea6-lled-Telus-account-Mon-profil-Radio-Canada-Aide-chrome-large-1/trace.zip
+    Usage:
+
+        yarn playwright show-trace test-results/Toutv-myAccount-subscriptions-telusCancelled-m-79ea6-lled-Telus-account-Mon-profil-Radio-Canada-Aide-chrome-large-1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Resuse user : telusCancelled
+
+[[ATTACHMENT|../test-results/Toutv-myAccount-subscriptions-telusCancelled-m-79ea6-lled-Telus-account-Mon-profil-Radio-Canada-Aide-chrome-large-1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Toutv-myAccount-subscriptions-telusCancelled-m-79ea6-lled-Telus-account-Mon-profil-Radio-Canada-Aide-chrome-large-1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Toutv/myAccount/subscriptions/telusCancelled/monProfil_RadioCanada.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="3.319" errors="0">
+<testcase name="C1647635 TTV Cancelled Telus account  / Mon profil Radio-Canada" classname="Toutv/myAccount/subscriptions/telusCancelled/monProfil_RadioCanada.spec.ts" time="3.319">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/myAccount/subscriptions/telusCancelled/monProfil_ViePrivee.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="3.334" errors="0">
+<testcase name="C1647636 TTV Cancelled TELUS account / Mon profil Radio-Canada / Vie privée" classname="Toutv/myAccount/subscriptions/telusCancelled/monProfil_ViePrivee.spec.ts" time="3.334">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/myAccount/subscriptions/telusCancelled/preferencesCommunication.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="6.375" errors="0">
+<testcase name="C1596436 TTV Cancelled Telus / Préférences de communication" classname="Toutv/myAccount/subscriptions/telusCancelled/preferencesCommunication.spec.ts" time="6.375">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/myAccount/subscriptions/telusCancelled/supprimerCompte.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="1" skipped="0" time="8.286" errors="0">
+<testcase name="C1596437 TTV Cancelled Account / Supprimer mon compte" classname="Toutv/myAccount/subscriptions/telusCancelled/supprimerCompte.spec.ts" time="8.286">
+<failure message="supprimerCompte.spec.ts:3:5 C1596437 TTV Cancelled Account / Supprimer mon compte" type="FAILURE">
+<![CDATA[  [chrome-large-1] › Toutv/myAccount/subscriptions/telusCancelled/supprimerCompte.spec.ts:3:5 › C1596437 TTV Cancelled Account / Supprimer mon compte 
+
+    TimeoutError: locator.click: Timeout 5000ms exceeded.
+    =========================== logs ===========================
+    waiting for getByRole('button', { name: 'Supprimer mon compte' })
+    ============================================================
+
+      4 |   await page.goto(navigator.MyAccount);
+      5 |   await expect(page.getByText('Suppression du compte')).toBeVisible;
+    > 6 |   await page.getByRole('button', { name: 'Supprimer mon compte' }).click();
+        |                                                                    ^
+      7 |   await expect(page.getByText('Avant de supprimer votre compte')).toBeVisible;
+      8 |   await expect(page.getByText('votre compte vous permet de vous connecter à toutes les plateformes num'))
+      9 |     .toBeVisible;
+
+        at /source/tests/Toutv/myAccount/subscriptions/telusCancelled/supprimerCompte.spec.ts:6:68
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Toutv-myAccount-subscriptions-telusCancelled-s-14ae4-6437-TTV-Cancelled-Account-Supprimer-mon-compte-chrome-large-1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Toutv-myAccount-subscriptions-telusCancelled-s-14ae4-6437-TTV-Cancelled-Account-Supprimer-mon-compte-chrome-large-1/trace.zip
+    Usage:
+
+        yarn playwright show-trace test-results/Toutv-myAccount-subscriptions-telusCancelled-s-14ae4-6437-TTV-Cancelled-Account-Supprimer-mon-compte-chrome-large-1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Resuse user : telusCancelled
+
+[[ATTACHMENT|../test-results/Toutv-myAccount-subscriptions-telusCancelled-s-14ae4-6437-TTV-Cancelled-Account-Supprimer-mon-compte-chrome-large-1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Toutv-myAccount-subscriptions-telusCancelled-s-14ae4-6437-TTV-Cancelled-Account-Supprimer-mon-compte-chrome-large-1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Toutv/navigation/webFooter/credentials.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="3.723" errors="0">
+<testcase name="C81236 Credentials" classname="Toutv/navigation/webFooter/credentials.spec.ts" time="3.723">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/navigation/webFooter/footer.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="4.858" errors="0">
+<testcase name="C81233 Links in the footer" classname="Toutv/navigation/webFooter/footer.spec.ts" time="4.858">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/navigation/webFooter/socialMedia.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="6.689" errors="0">
+<testcase name="C81234 Social media links in the footer" classname="Toutv/navigation/webFooter/socialMedia.spec.ts" time="6.689">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/navigation/webNavigation/mainMenu.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="7" failures="0" skipped="0" time="34.85" errors="0">
+<testcase name="C80779 show menu navigation" classname="Toutv/navigation/webNavigation/mainMenu.spec.ts" time="7.92">
+<properties>
+<property name="slow" value="">
+</property>
+</properties>
+</testcase>
+<testcase name="C80779 Jeunesse menu navigation " classname="Toutv/navigation/webNavigation/mainMenu.spec.ts" time="4.161">
+</testcase>
+<testcase name="C80779 parcourir menu navigation " classname="Toutv/navigation/webNavigation/mainMenu.spec.ts" time="4.228">
+</testcase>
+<testcase name="C80779 Rattrapage menu navigation " classname="Toutv/navigation/webNavigation/mainMenu.spec.ts" time="3.863">
+</testcase>
+<testcase name="C80779 Extra menu navigation " classname="Toutv/navigation/webNavigation/mainMenu.spec.ts" time="4.413">
+</testcase>
+<testcase name="C80779 En-direct menu navigation " classname="Toutv/navigation/webNavigation/mainMenu.spec.ts" time="3.845">
+</testcase>
+<testcase name="C80779 Empty state of the search box" classname="Toutv/navigation/webNavigation/mainMenu.spec.ts" time="6.42">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/navigation/webNavigation/menuNavigation.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="4.861" errors="0">
+<testcase name="C80779 validate menu navigation" classname="Toutv/navigation/webNavigation/menuNavigation.spec.ts" time="4.861">
+<system-out>
+<![CDATA[[ [32m'[data-cy-link="logo"]'[39m, [32m'/'[39m ]
+[ [32m'[data-cy-link="logo"]'[39m, [32m'/'[39m ]
+[ [32m'[data-cy-link="rattrapage"]'[39m, [32m'/rattrapage'[39m ]
+[ [32m'[data-cy-link="jeunesse"]'[39m, [32m'/categorie/jeunesse'[39m ]
+[ [32m'[data-cy-link="extra"]'[39m, [32m'/categorie/extra'[39m ]
+[ [32m'[data-cy-link="en-direct"]'[39m, [32m'/en-direct'[39m ]
+[ [32m'[data-cy-category="categorie/serie"]'[39m, [32m'/categorie/serie'[39m ]
+[ [32m'[data-cy-category="categorie/emission"]'[39m, [32m'/categorie/emission'[39m ]
+[ [32m'[data-cy-category="categorie/film"]'[39m, [32m'/categorie/film'[39m ]
+[ [32m'[data-cy-category="categorie/evenement"]'[39m, [32m'/categorie/evenement'[39m ]
+[ [32m'[id="last-item"]'[39m, [32m'/parcourir'[39m ]
+[ [32m'[data-cy="btn-login"]'[39m, [32m'/connexion-utilisateur'[39m ]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Toutv/pageStructure/catchUp.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="6.16" errors="0">
+<testcase name="C81400 Catch-up page" classname="Toutv/pageStructure/catchUp.spec.ts" time="6.16">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/pageStructure/categoryPage.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="2" failures="0" skipped="0" time="7.083" errors="0">
+<testcase name="C2074729 Category page" classname="Toutv/pageStructure/categoryPage.spec.ts" time="3.576">
+</testcase>
+<testcase name="C2074729 No ads banner for premium user in category page" classname="Toutv/pageStructure/categoryPage.spec.ts" time="3.507">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/Search/SearchWeb/backButton.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="6.441" errors="0">
+<testcase name="C81336 Use the back button after using the search" classname="Toutv/Search/SearchWeb/backButton.spec.ts" time="6.441">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/Search/SearchWeb/clearingSearch.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="5.485" errors="0">
+<testcase name="C81310 Clearing the search box" classname="Toutv/Search/SearchWeb/clearingSearch.spec.ts" time="5.485">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/Search/SearchWeb/closingSearch.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="5.01" errors="0">
+<testcase name="C81311 Closing the search box" classname="Toutv/Search/SearchWeb/closingSearch.spec.ts" time="5.01">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/Search/SearchWeb/emptyBox.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="4.307" errors="0">
+<testcase name="C81309 Empty state of the search box" classname="Toutv/Search/SearchWeb/emptyBox.spec.ts" time="4.307">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/Search/SearchWeb/expendingSearch.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="5.337" errors="0">
+<testcase name="C81308 Expending the search box" classname="Toutv/Search/SearchWeb/expendingSearch.spec.ts" time="5.337">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/Search/SearchWeb/navigatingSearch.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="5.076" errors="0">
+<testcase name="C81352 Navigating the search results" classname="Toutv/Search/SearchWeb/navigatingSearch.spec.ts" time="5.076">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/Search/SearchWeb/searchResult.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="5" failures="0" skipped="0" time="28.054" errors="0">
+<testcase name="C81314 Content information in the search results" classname="Toutv/Search/SearchWeb/searchResult.spec.ts" time="6.12">
+</testcase>
+<testcase name="C81314 autocomplete search results" classname="Toutv/Search/SearchWeb/searchResult.spec.ts" time="6.14">
+</testcase>
+<testcase name="C81314 category do not appear in search results" classname="Toutv/Search/SearchWeb/searchResult.spec.ts" time="5.117">
+</testcase>
+<testcase name="C81314 collection appears in search results" classname="Toutv/Search/SearchWeb/searchResult.spec.ts" time="4.945">
+</testcase>
+<testcase name="C81314 paid content do not appear in search results" classname="Toutv/Search/SearchWeb/searchResult.spec.ts" time="5.732">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/showPage/description/headerDescription.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="3.169" errors="0">
+<testcase name="C72211 Header Full description - More button should not be visible" classname="Toutv/showPage/description/headerDescription.spec.ts" time="3.169">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/showPage/description/originalTitle.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="2.844" errors="0">
+<testcase name="C1974444 original title" classname="Toutv/showPage/description/originalTitle.spec.ts" time="2.844">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/showPage/description/showMore.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="4.37" errors="0">
+<testcase name="C72214 Show More / Show Less Single Content (Web)" classname="Toutv/showPage/description/showMore.spec.ts" time="4.37">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/showPage/episode/playButton.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="4" failures="0" skipped="0" time="13.996" errors="0">
+<testcase name="Free episode with different users › C1145234,C1078424 Play button TTV standard user" classname="Toutv/showPage/episode/playButton.spec.ts" time="3.096">
+</testcase>
+<testcase name="Free episode with different users › C1145234 Play button TTV Premium user" classname="Toutv/showPage/episode/playButton.spec.ts" time="3.389">
+</testcase>
+<testcase name="Premium episode with different users › C1145234, C1078424 Play button TTV standard user - premium episode" classname="Toutv/showPage/episode/playButton.spec.ts" time="3.734">
+</testcase>
+<testcase name="Premium episode with different users › C1145234 Play button TTV Premium user - premium episode" classname="Toutv/showPage/episode/playButton.spec.ts" time="3.777">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/showPage/episode/showBadge.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="2" failures="2" skipped="0" time="23.631" errors="0">
+<testcase name="C72238 Badge/CTA Not Connected User" classname="Toutv/showPage/episode/showBadge.spec.ts" time="4.461">
+<failure message="showBadge.spec.ts:6:5 C72238 Badge/CTA Not Connected User" type="FAILURE">
+<![CDATA[  [chrome-large-1] › Toutv/showPage/episode/showBadge.spec.ts:6:5 › C72238 Badge/CTA Not Connected User 
+
+    Error: A snapshot doesn't exist at /source/tests/Toutv/showPage/episode/showBadge.spec.ts-snapshots/notConnected-SignIn-chrome-large-1-linux.png, writing actual.
+
+       8 |   await expect(page.locator('button:text("Essayer")').first()).toBeVisible();
+       9 |   await page.getByLabel('Saison 1').hover();
+    > 10 |   await expect(page.getByLabel('Saison 1')).toHaveScreenshot(`notConnected-SignIn.png`, { threshold: 0.3 });
+         |   ^
+      11 | });
+      12 |
+      13 | testPremium('C72238 Badge/CTA Premium user', async ({ page }) => {
+
+        at /source/tests/Toutv/showPage/episode/showBadge.spec.ts:10:3
+
+    attachment #1: notConnected-SignIn-actual.png (image/png) ──────────────────────────────────────
+    test-results/Toutv-showPage-episode-showBadge-C72238-Badge-CTA-Not-Connected-User-chrome-large-1/notConnected-SignIn-actual.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Toutv-showPage-episode-showBadge-C72238-Badge-CTA-Not-Connected-User-chrome-large-1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Toutv-showPage-episode-showBadge-C72238-Badge-CTA-Not-Connected-User-chrome-large-1/trace.zip
+    Usage:
+
+        yarn playwright show-trace test-results/Toutv-showPage-episode-showBadge-C72238-Badge-CTA-Not-Connected-User-chrome-large-1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Toutv-showPage-episode-showBadge-C72238-Badge-CTA-Not-Connected-User-chrome-large-1/notConnected-SignIn-actual.png]]
+
+[[ATTACHMENT|../test-results/Toutv-showPage-episode-showBadge-C72238-Badge-CTA-Not-Connected-User-chrome-large-1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Toutv-showPage-episode-showBadge-C72238-Badge-CTA-Not-Connected-User-chrome-large-1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="C72238 Badge/CTA Premium user" classname="Toutv/showPage/episode/showBadge.spec.ts" time="19.17">
+<failure message="showBadge.spec.ts:13:12 C72238 Badge/CTA Premium user" type="FAILURE">
+<![CDATA[  [chrome-large-1] › Toutv/showPage/episode/showBadge.spec.ts:13:12 › C72238 Badge/CTA Premium user 
+
+    Error: Timed out 15000ms waiting for expect(received).toBeVisible()
+    Call log:
+      - expect.toBeVisible with timeout 15000ms
+      - waiting for getByRole('button', { name: 'Essayer l\'EXTRA' })
+
+
+      13 | testPremium('C72238 Badge/CTA Premium user', async ({ page }) => {
+      14 |   await page.goto(show);
+    > 15 |   await expect(page.getByRole('button', { name: "Essayer l'EXTRA" })).toBeVisible();
+         |                                                                       ^
+      16 |   await page.getByLabel('Saison 1').hover();
+      17 |   await expect(page.getByLabel('Saison 1')).toHaveScreenshot(`premium-PlayButton.png`, {
+      18 |     threshold: 0.3
+
+        at /source/tests/Toutv/showPage/episode/showBadge.spec.ts:15:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Toutv-showPage-episode-showBadge-C72238-Badge-CTA-Premium-user-chrome-large-1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Toutv-showPage-episode-showBadge-C72238-Badge-CTA-Premium-user-chrome-large-1/trace.zip
+    Usage:
+
+        yarn playwright show-trace test-results/Toutv-showPage-episode-showBadge-C72238-Badge-CTA-Premium-user-chrome-large-1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Toutv-showPage-episode-showBadge-C72238-Badge-CTA-Premium-user-chrome-large-1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Toutv-showPage-episode-showBadge-C72238-Badge-CTA-Premium-user-chrome-large-1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Toutv/showPage/seasonPicker/seasonPickerFreeEpisode.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="4.284" errors="0">
+<testcase name="Show page, season without lock with a free episode  › C130863 Premium content, free episode user  Guest / Member not signed in" classname="Toutv/showPage/seasonPicker/seasonPickerFreeEpisode.spec.ts" time="4.284">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/showPage/share/shareButton.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="4" failures="0" skipped="0" time="17.319" errors="0">
+<testcase name="C1078412 Header - Share button should be present" classname="Toutv/showPage/share/shareButton.spec.ts" time="3.314">
+</testcase>
+<testcase name="C1078412 Episode - Share button should be present" classname="Toutv/showPage/share/shareButton.spec.ts" time="4.03">
+</testcase>
+<testcase name="C1078412 Share in facebook" classname="Toutv/showPage/share/shareButton.spec.ts" time="4.47">
+</testcase>
+<testcase name="C1078412 Share in Twitter" classname="Toutv/showPage/share/shareButton.spec.ts" time="5.505">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/showPage/sponsor/showWith3Sponsors.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="5.927" errors="0">
+<testcase name="C1144604 Header with three sponsors" classname="Toutv/showPage/sponsor/showWith3Sponsors.spec.ts" time="5.927">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/showPage/sponsor/showWithoutSponsor.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="3.003" errors="0">
+<testcase name="C81184 Header without sponsor" classname="Toutv/showPage/sponsor/showWithoutSponsor.spec.ts" time="3.003">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/showPage/sponsor/showWithSponsor.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="3.911" errors="0">
+<testcase name="C1592674 Header with sponsor" classname="Toutv/showPage/sponsor/showWithSponsor.spec.ts" time="3.911">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/showPage/sponsor/sponsorPassedDate.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="3.035" errors="0">
+<testcase name="C81188 Header sponsor with a end date" classname="Toutv/showPage/sponsor/sponsorPassedDate.spec.ts" time="3.035">
+</testcase>
+</testsuite>
+<testsuite name="Toutv/showPage/sponsor/swimlaneSponsor.spec.ts" timestamp="2023-10-03T15:04:07.825Z" hostname="chrome-large-1" tests="1" failures="0" skipped="0" time="5.227" errors="0">
+<testcase name="C1985063 Swimlane with sponsor" classname="Toutv/showPage/sponsor/swimlaneSponsor.spec.ts" time="5.227">
+</testcase>
+</testsuite>
+</testsuites>
